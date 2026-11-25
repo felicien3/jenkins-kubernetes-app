@@ -36,6 +36,14 @@ pipeline {
             }
         }
 
+        stage('Verify Docker') {
+            steps {
+            echo 'Checking Docker availability...'
+            bat 'docker --version'
+            bat 'docker info'
+            }
+        }
+
         stage('Deploy to Staging') {
             steps {
                 echo 'Deploying application to staging...'
