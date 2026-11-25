@@ -1,0 +1,17 @@
+{
+  "name": "jenkins-kubernetes-app",
+  "version": "1.0.0",
+  "description": "DevOps CI/CD practical application",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "node --test"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "express": "^5.3.0"
+  }
+}
